@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<document>
+
+	<!-- #region App -->
+
+	<string name="level_title">Уровень</string>
+
+	<string name="gameover_title">Конец игры</string>
+	<string name="complete_title">Пройдено</string>
+
+	<string name="next_title">Следующий</string>
+	<string name="restart_title">Заново</string>
+
+	<string name="play_title">Нажмите что бы играть</string>
+
+	<!-- #endregion -->
+</document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+
+	<!-- #region App -->
+
+	<string name="level_title">Level</string>
+
+	<string name="gameover_title">Game Over</string>
+	<string name="complete_title">Complete</string>
+
+	<string name="next_title">Next</string>
+	<string name="restart_title">Restart</string>
+
+	<string name="play_title">Tap to play</string>
+
+	<!-- #endregion -->
+</document>
