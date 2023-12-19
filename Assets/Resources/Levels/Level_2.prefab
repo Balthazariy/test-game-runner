@@ -2101,7 +2101,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
 --- !u!114 &5453525422679575098
@@ -2119,7 +2119,7 @@ MonoBehaviour:
   _minZ: 1.8
   _maxZ: -1.8
   _speed: 5
-  swipeThreshold: 50
+  _rigidbody: {fileID: 1851120676167073455}
 --- !u!114 &234602345328852957
 MonoBehaviour:
   m_ObjectHideFlags: 0

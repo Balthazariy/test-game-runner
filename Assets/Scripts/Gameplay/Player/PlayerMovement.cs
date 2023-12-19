@@ -7,11 +7,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _maxZ = -1.8f;
     [SerializeField] private float _speed = 5.0f;
 
-    [Space(4)]
-    [Header("Android swipe settings")]
-    [SerializeField] private float swipeThreshold = 50f;
-
-    private Vector2 touchStartPos;
+    [SerializeField] private Rigidbody _rigidbody;
 
     private bool _isActive;
 
@@ -48,12 +44,9 @@ public class PlayerMovement : MonoBehaviour
 #if UNITY_ANDROID
         if (Input.touchCount > 0)
         {
-            Touch touch = Input.GetTouch(0);
+            var direction = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-            var touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            var direction = touchPosition - transform.localPosition;
-            //var clampedDirection = Mathf.Clamp(direction.x, -1.0f, 1.0f);
-            transform.Translate(Vector3.left * Time.deltaTime * _speed * (-direction.x * 4));
+            transform.Translate(new Vector3(direction.x * _speed * Time.deltaTime, 0, 0));
         }
 #endif
         if (transform.localPosition.z > _minZ)
